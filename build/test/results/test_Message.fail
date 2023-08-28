@@ -1,0 +1,148 @@
+---
+:source:
+  :path: test
+  :file: test_Message.c
+:successes:
+- :test: test_MessageCreateFrameRound3x3
+  :line: 13
+  :message: ''
+  :unity_test_time: 0
+- :test: test_MessageCreateFrameRound5x5
+  :line: 82
+  :message: ''
+  :unity_test_time: 0
+- :test: test_MessageCreateFrameRound7X7
+  :line: 131
+  :message: ''
+  :unity_test_time: 0
+- :test: test_MessageCreateFrameNamePlayer1
+  :line: 179
+  :message: ''
+  :unity_test_time: 0
+- :test: test_MessageCreateFramePoint1
+  :line: 295
+  :message: ''
+  :unity_test_time: 0
+- :test: test_MessageCreateFramePoint2
+  :line: 325
+  :message: ''
+  :unity_test_time: 0
+- :test: test_MessageCreateFrameScore1
+  :line: 355
+  :message: ''
+  :unity_test_time: 0
+- :test: test_MessageCreateFrameScore2
+  :line: 388
+  :message: ''
+  :unity_test_time: 0
+:failures:
+- :test: test_MessageCreateFrameNamePlayer2
+  :line: 284
+  :message: Expected 0x00 Was 0x90
+  :unity_test_time: 0
+:ignores: []
+:counts:
+  :total: 9
+  :passed: 8
+  :failed: 1
+  :ignored: 0
+:stdout:
+- "/*--------------------------------------------------------------------------------*/"
+- Start test_MessageCreateFrameRound3x3
+- 'length_arr: 6'
+- "- Create -"
+- 'aa 01 02 00 71 5c '
+- End test_MessageCreateFrameRound3x3
+- ''
+- 'Giá trị phần tử trong mảng được truyền qua USART: aa 01 02 00 71 5c '
+- "- Detect -"
+- " StartFrame   : aa "
+- " TypeMessage  : 1 "
+- " LengthData   : 2 "
+- " CheckFrame   : 5c71 "
+- End test_SEC_Message_Detect_Frame_Round3x3
+- "/*--------------------------------------------------------------------------------*/"
+- ''
+- "/*--------------------------------------------------------------------------------*/"
+- Start test_MessageCreateFrameRound5x5
+- 'length_arr: 6'
+- "- Create -"
+- 'aa 02 02 00 81 5c '
+- End test_MessageCreateFrameRound5x5
+- ''
+- "- Detect -"
+- " StartFrame   : aa "
+- " TypeMessage  : 2 "
+- " LengthData   : 2 "
+- " CheckFrame   : 2aa "
+- End test_SEC_Message_Detect_Frame_Round5X5
+- "/*--------------------------------------------------------------------------------*/"
+- ''
+- "/*--------------------------------------------------------------------------------*/"
+- Start test_MessageCreateFrameRound7x7
+- 'length_arr: 6'
+- "- Create -"
+- 'aa 03 02 00 d0 9c '
+- End test_MessageCreateFrameRound7x7
+- ''
+- "- Detect -"
+- " StartFrame   : aa "
+- " TypeMessage  : 3 "
+- " LengthData   : 2 "
+- " CheckFrame   : 3aa "
+- End test_SEC_Message_Detect_Frame_Round7X7
+- "/*--------------------------------------------------------------------------------*/"
+- ''
+- "/*--------------------------------------------------------------------------------*/"
+- Start test_MessageCreateFrameNamePlayer1
+- 'length_arr: 12'
+- 'length_data: 8'
+- "- Create -"
+- 'aa 04 08 00 48 75 6f 6e 67 00 b1 79 '
+- End test_MessageCreateFrameNamePlayer1
+- detect FrameNamePlayer1
+- ''
+- "- Detect -"
+- " StartFrame   : aa "
+- " TypeMessage  : 4 "
+- " LengthData   : 8 "
+- " Data   : Huong "
+- " CheckFrame   : 79b1 "
+- End test_SEC_Message_Detect_Frame_Name1
+- "/*--------------------------------------------------------------------------------*/"
+- Start test_MessageCreateFrameNamePlayer2
+- 'length_arr: 17'
+- 'length_data: 11'
+- "- Create -"
+- 'aa 05 0d 00 4b 68 61 6e 68 20 4c 69 6e 68 00 00 e6 '
+- End test_MessageCreateFrameNamePlayer2
+- detect FrameNamePlayer2
+- "/*--------------------------------------------------------------------------------*/"
+- Start test_MessageCreateFramePoint1
+- 'length_arr: 8'
+- 'length_data: 1'
+- "- Create -"
+- 'aa 06 04 00 31 00 84 b1 '
+- End test_MessageCreateFramePoint1
+- "/*--------------------------------------------------------------------------------*/"
+- Start test_MessageCreateFramePoint2
+- 'length_arr: 8'
+- 'length_data: 1'
+- "- Create -"
+- 'aa 07 04 00 32 00 b9 81 '
+- End test_MessageCreateFramePoint2
+- "/*--------------------------------------------------------------------------------*/"
+- Start test_MessageCreateFrameScore1
+- 'length_arr: 8'
+- 'length_data: 1'
+- "- Create -"
+- 'aa 08 04 00 33 00 ec 10 '
+- End test_MessageCreateFrameScore1
+- "/*--------------------------------------------------------------------------------*/"
+- Start test_MessageCreateFrameScore2
+- 'length_arr: 8'
+- 'length_data: 1'
+- "- Create -"
+- 'aa 09 04 00 32 00 d0 40 '
+- End test_MessageCreateFrameScore2
+:time: 0.09249760000000151

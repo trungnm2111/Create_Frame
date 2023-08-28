@@ -1,0 +1,19 @@
+---
+:source:
+  :path: test
+  :file: test_fsm.c
+:successes:
+- :test: test_Fsm_Test_Array_Receive
+  :line: 9
+  :message: ''
+  :unity_test_time: 0
+:failures: []
+:ignores: []
+:counts:
+  :total: 1
+  :passed: 1
+  :failed: 0
+  :ignored: 0
+:stdout:
+- 'aa 1 2 0 71 5c '
+:time: 0.05619670000032784
